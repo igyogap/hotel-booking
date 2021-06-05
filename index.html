@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+    type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $(".selector").datepicker({ dateFormat: 'D, dd M' });
+    });
+
+
+  </script>
+
+  <title>boking hotel</title>
+</head>
+
+<body class="body">
+  <div class="container-image">
+    <img src="img/tanah-lot-temple-bali-island-indonesia.jpg" alt="" srcset="">
+  </div>
+
+  <div class="container">
+    <div class="show-properties position-absolute botton-50 start-50 translate-middle ">
+      <p class="">Show 389 properties</p>
+    </div>
+    <div class="box-content position-absolute top-50 start-50 translate-middle">
+      <h3>Hotel Booking</h3>
+
+      <form action="" method="post" class="">
+
+        <div class="form-group">
+          <label for="nama-kota" class="label">Location</label>
+          <input type="text" class="form-control input-location">
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col"><label for="" class="label">Chek-in</label></div>
+            <div class="col"><label for="" class="label">Chek-out</label></div>
+          </div>
+          <div class="input-group">
+            <input type="text" aria-label="chek-in" id=" datepicker chek-in" class=" form-control input-check selector">
+            <div class="vl"></div>
+            <input type="text" aria-label="chek-out" id=" datepicker chek-out"
+              class=" form-control input-check selector">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="row">
+            <div class="col"><label for="" class="label">Room</label></div>
+            <div class="col"><label for="" class="label">Adults</label></div>
+            <div class="col"><label for="" class="label">Kids</label></div>
+          </div>
+          <div class="input-group">
+            <input type="number" aria-label="chek-in" id="chek-in" class="form-control  room" min="0">
+            <div class="vll"></div>
+            <input type="number" aria-label="chek-out" id="chek-out" class=" form-control  adults" min="0">
+            <div class="vlr"></div>
+            <input type="number" aria-label="chek-out" id="chek-out" class=" form-control  kids" min="0">
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"
+    integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css"
+    integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
